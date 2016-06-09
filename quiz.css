@@ -1,0 +1,102 @@
+@import url("./_reset.css");
+
+@font-face {
+  font-family: Simpson;
+  src: url("./Simpsonfont.ttf")
+  font-family: Homer;
+  src: url("./Homer.ttf")
+ }
+
+.top  {
+  height: 110px;
+  background-color: #fcd14e;
+  text-align: center;
+  display: flex;
+  font-family: Simpson;
+}
+
+.score {
+  flex: 1;
+  border: solid 2px white;
+}
+
+.bottom {
+  height: 120px;
+  justify-content: center;
+  display: flex;
+}
+
+button {
+flex: 1;
+height: 100%;
+margin: 0;
+font-family: Simpson;
+font-size: 2.3em;
+color: #70D1FF;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+background-color: #fcd14e;
+}
+
+.question  {
+  height: 300px;
+  background-image: url("http://vignette2.wikia.nocookie.net/simpsons/images/6/63/The_Simpsons_Simpsons_FamilyPicture.png/revision/latest?cb=20101023180303");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position: center;
+  background-size: 20%;
+  font-size: 3.1em;
+  justify-content: center;
+  background-color: #70D1FF;
+  font-family: Simpson;
+  flex: 1;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.end  {
+  height: 250px;
+  font-size: 2.5em;
+  justify-content: center;
+  background-color: #70D1FF;
+  font-family: Simpson;
+  flex: 1;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+  display:block;
+}
+
+.end .text  {
+padding-bottom: 300px;
+    line-height: 50px;
+}
+#title  {
+  font-size: 2em;
+  color: red;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  padding-top: 10px;
+}
+#player1Score  {
+  padding-top: 10px;
+  font-size: 2em;
+}
+
+#player2Score  {
+  padding-top: 10px;
+  font-size: 2em;
+}
+.hidden  {
+  display:none;
+}
+
+@media (max-width: 600px) {
+  .bottom {
+  display: block;
+}
+button {
+  width: 100%;
+}
+}
